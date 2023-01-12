@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('gym/vecteezy_man-holding-a-dumbbell-in-a-gym-with-row-of-dumbbells-in-the-background_2029070.jpg');
+        background-repeat: no-repeat;
+        background-size: 1540px 740px;
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 100px;
+    }
+
+    .mid {
+        display: block;
+        width: 39%;
+        margin: 20px auto;
+        /* border: 2px solid blue; */
+    }
+
+    .right {
+        position: absolute;
+        right: 25px;
+        top: 30px;
+        display: inline-block;
+        /* border: 2px solid green; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 18px 10px;
+
+    }
+
+    .navbar li a:hover {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    .btn {
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 2px 10px;
+        border-radius: 8px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(80, 74, 74);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 65px 60px;
+        padding: 33px 67px;
+        border-radius: 4px;
+        width: 35%;
+    }
+
+    .custdetails input {
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        display: block;
+        width: 200px;
+        padding: 3px 2px;
+        border: 2px solid black;
+        margin: 5px auto;
+        font-size: 20px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 25%;
+        margin: 8px auto;
+    }
+</style>
+
+<body>
+    <header class=" header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="gym/aditya-fitness-low-resolution-logo-white-on-black-background.png" alt="">
+            
+        </div>
+        <!-- mid for navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fitness Trainers</a></li>
+                <li><a href="#">Schedules</a></li>
+                <li><a href="#">Contact</a></li>
+
+
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Enroll in the best Fitness Program in our gym</h1>
+        <form action="noaction.php">
+            <div class="custdetails">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="custdetails">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="custdetails">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="custdetails">
+                <input type="text" name="" placeholder="Enter Your Location">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
